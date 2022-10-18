@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+   
+</head>
+<body>
+    <form action="#">
+      <h1>Registration Form</h1>
+      <div class="formcontainer">
+      <hr/>
+      <div class="container">
+        <label for="uname"><strong>Username</strong></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="usn" required>
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      </div>
+      <button type="button" onclick="saveData()" id="save_btn">Submit</button>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#"> Forgot password?</a></span>
+      </div>
+    </form>
+    <script src="local.js">
+    </script>
+</body>
+</html>
